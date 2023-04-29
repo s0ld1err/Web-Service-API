@@ -18,13 +18,6 @@ A Flask web application that fetches news articles from an RSS feed, filters and
 3. `/clear`: Clear all data from the SQLite database (POST)
 4. `/versions`: Determine the latest production version from a list of version strings (POST)
 
-## Dependencies
-
-- Flask
-- feedparser
-- SQLAlchemy
-- re
-
 ## Usage
 
 1. Clone the repository
