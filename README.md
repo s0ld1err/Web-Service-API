@@ -22,7 +22,7 @@ A Flask web application that fetches news articles from an RSS feed, filters and
 
 1. Clone the repository
 2. Install the required dependencies
-3. Run the Flask app
+3. Run the Flask app (news_api.py)
 
 ## Example/Test Use Cases
 
