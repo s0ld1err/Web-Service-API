@@ -36,11 +36,11 @@ A Flask web application that fetches news articles from an RSS feed, filters and
 
 ### Using a browser or cURL
 
-1. **Fetching news articles**: Open a browser and visit `http://localhost:5000/rss` to fetch the news articles. Optionally, you can add query parameters for filtering and sorting. For example, to fetch articles containing the keyword "China" and sort them by publication date in ascending order, visit `http://localhost:5000/rss?search=China&sort=pub_date_asc`.
+1. **Fetching news articles**: Open a browser and visit `http://localhost:5000/rss` to fetch the news articles. Optionally, you can add query parameters for filtering and sorting. For example, to fetch articles containing the keyword "zombie" and sort them by publication date in ascending order, visit `http://localhost:5000/rss?search=zombie&sort=pub_date_asc`.
 
-2. **Saving news articles**: Use cURL to send a POST request to `http://localhost:5000/save` with JSON data containing the publisher, news group, and news articles to be saved. Replace `data.json` with the path to your JSON file:
+2. **Saving news articles**: Use cURL to send a POST request to `http://localhost:5000/save` with JSON data containing the publisher, news group, and news articles to be saved. Replace `news_data.json` with the path to your JSON file:
 
-curl -X POST -H "Content-Type: application/json" -d @data.json http://localhost:5000/save
+curl -X POST -H "Content-Type: application/json" -d @news_data.json http://localhost:5000/save
 
 3. **Clearing the database**: Use cURL to send a POST request to `http://localhost:5000/clear` to delete all the data from the SQLite database:
 
