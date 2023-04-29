@@ -1,0 +1,18 @@
+{
+    "publisher": "The New York Times",
+    "news_group": "World",
+    "news": [
+      {
+        "title": "Example News Title 1",
+        "link": "https://www.example.com/news1",
+        "description": "This is an example news description 1.",
+        "pub_date": "Mon, 01 May 2023 12:00:00 +0000"
+      },
+      {
+        "title": "Example News Title 2",
+        "link": "https://www.example.com/news2",
+        "description": "This is an example news description 2.",
+        "pub_date": "Tue, 02 May 2023 12:00:00 +0000"
+      }
+    ]
+  }
