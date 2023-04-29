@@ -28,7 +28,7 @@ A Flask web application that fetches news articles from an RSS feed, filters and
 
 ### Using the provided scripts
 
-1. **Saving filtered news**: Run `save_news.py` to fetch news articles, filter them by keyword (optional), sort them based on your choice (optional), and save them to the database.
+1. **Saving filtered/unfiltered news**: Run `save_news.py` to fetch news articles, filter them by keyword (optional), sort them based on your choice (optional), and save them to the database.
 
 2. **Printing the saved news**: Run `print_db.py` to display the saved news articles, publishers, and news groups from the database.
 
