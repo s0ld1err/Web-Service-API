@@ -23,3 +23,29 @@ A Flask web application that fetches news articles from an RSS feed, filters and
 1. Clone the repository
 2. Install the required dependencies
 3. Run the Flask app
+
+## Example/Test Use Cases
+
+### Using the provided scripts
+
+1. **Saving filtered news**: Run `save_news.py` to fetch news articles, filter them by keyword (optional), sort them based on your choice (optional), and save them to the database.
+
+2. **Printing the saved news**: Run `print_db.py` to display the saved news articles, publishers, and news groups from the database.
+
+3. **Testing the production version**: Run `test_versions.py` to test the `/versions` endpoint with sample input and receive the latest production version from the provided list of versions.
+
+### Using a browser or cURL
+
+1. **Fetching news articles**: Open a browser and visit `http://localhost:5000/rss` to fetch the news articles. Optionally, you can add query parameters for filtering and sorting. For example, to fetch articles containing the keyword "China" and sort them by publication date in ascending order, visit `http://localhost:5000/rss?search=China&sort=pub_date_asc`.
+
+2. **Saving news articles**: Use cURL to send a POST request to `http://localhost:5000/save` with JSON data containing the publisher, news group, and news articles to be saved. Replace `data.json` with the path to your JSON file:
+
+curl -X POST -H "Content-Type: application/json" -d @data.json http://localhost:5000/save
+
+3. **Clearing the database**: Use cURL to send a POST request to `http://localhost:5000/clear` to delete all the data from the SQLite database:
+
+curl -X POST http://localhost:5000/clear
+
+4. **Determining the latest production version**: Use cURL to send a POST request to `http://localhost:5000/versions` with JSON data containing a list of version strings. Replace `versions.json` with the path to your JSON file containing the list of versions:
+
+curl -X POST -H "Content-Type: application/json" -d @versions.json http://localhost:5000/versions
